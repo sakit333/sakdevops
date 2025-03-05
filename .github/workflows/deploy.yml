@@ -26,7 +26,7 @@ jobs:
         run: npm ci
 
       - name: Build Project
-        run: npm run build
+        run: npm run build -- --base=/sakdevops/ 
 
       - name: Fix Permissions for GitHub Pages
         run: chmod -c -R +rX "dist/"

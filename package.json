@@ -1,12 +1,12 @@
 {
+  "homepage": "https://sakit333.github.io/sakdevops/",
   "name": "sakdevops",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://sakit333.github.io/sakdevops/",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --base=/sakdevops/",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
