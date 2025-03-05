@@ -9,13 +9,13 @@ import Contact from "./pages/Contact";
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/sakdevops">  {/* Add basename */}
       <NavigationBar />
       <Routes>
-        <Route path="/sakdevops/" element={<Home />} />
-        <Route path="/sakdevops/about" element={<About />} />
-        <Route path="/sakdevops/projects" element={<Projects />} />
-        <Route path="/sakdevops/contact" element={<Contact />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </Router>
